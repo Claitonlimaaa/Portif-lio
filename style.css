@@ -1,0 +1,852 @@
+/*ESTILO GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('clash-grotesk.css');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+* ESTILO DO CABEÇALHO */
+/*.back-video{
+ width: 100%;
+ height: auto;
+ position: absolute;
+ right: 0%;
+ bottom: 0;
+ z-index: -1;
+}*/
+
+
+/*Menu*/
+
+header {
+    display: flex;
+    /* Flexbox para alinhar a imagem e o menu ao lado */
+    justify-content: space-between;
+    /* Espaçamento entre a imagem e o menu */
+    align-items: center;
+    /* Alinha verticalmente a imagem e o menu */
+    background-color: transparent;
+    width: auto;
+    height: 60px;
+    /* Ajuste a altura do header conforme necessário */
+
+
+
+
+}
+
+header .desk {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 10;
+    background-color: rgba(0, 13, 255, 0.608);
+    border-radius: 0px 0px 30px 30px;
+}
+
+img {
+
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+
+}
+
+header a {
+
+    color: rgba(199, 186, 186, 0.836);
+    text-decoration: none;
+    font-family: "Inter", serif;
+}
+
+header>.front-interface {
+    display: flex;
+    /* Flexbox dentro do header */
+    align-items: center;
+    /* Alinha a imagem e o menu verticalmente */
+    background-color: transparent;
+    position: absolute;
+    width: 50%;
+    top: 0;
+
+
+
+}
+
+header nav a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+    transition: .2s;
+
+}
+
+header .desk ul {
+    display: flex;
+    width: 55%;
+    height: 10;
+    gap: 32px;
+    list-style: none;
+}
+
+header .desk ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+header .desk ul li a {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.but-menu {
+    margin-left: 40%;
+}
+
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(251, 255, 0);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Inter", serif;
+
+
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(255, 140, 0);
+
+}
+
+/*Corpo do site*/
+main {
+    padding: 10px;
+
+}
+
+/*----------- espancivo ----------------------------------------------------------------------------------------------------------*/
+main .portfolio {
+    padding: 80px 4%;
+    width: 100%;
+    height: 950px;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.p-portfolio {
+    padding: 80px 4%;
+    width: 100%;
+    height: 950px;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+main .e-portfolio {
+    width: 100%;
+    height: 750px;
+}
+
+main .f-portfolio {
+    width: 100%;
+    height: 750px;
+}
+
+main section.formulario {
+    padding: 80px 4%;
+}
+
+main span,
+h1 span {
+    color: blue;
+    width: 20px;
+}
+
+main span:hover,
+h1 span:hover {
+    -webkit-text-stroke: 2px blue;
+    color: transparent;
+}
+
+main h1 {
+    color: #fff;
+    font-family: "TT Hoves Pro Trial";
+}
+
+main h2 {
+    color: #fff;
+
+}
+main p {
+    color: #fff;
+}
+
+/*---------------interface de incio da pagina----------------*/
+
+#portfolio {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+
+}
+
+#portfolio::before {
+    z-index: -1;
+
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+}
+
+/* Estilo do título */
+.texto h1 {
+    font-family: "TT Hoves Pro Trial";
+    font-size: 4rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+/* Estilo do parágrafo */
+.texto p {
+    width: 100%;
+    /* Ajuste o tamanho para melhor responsividade */
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    margin: 0 auto;
+    /* Centraliza o parágrafo */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "ClashGrotesk-Light";
+    text-align: justify;
+}
+
+/*----------------sobre mim--------------------------*/
+.e-portfolio {
+    background-color: #1f1f23;
+}
+
+.e-portfolio .img-cle {
+    display: none;
+}
+
+.e-portfolio .contato-bout {
+
+    display: none;
+
+}
+
+.e-portfolio h2 {
+    padding: 20px;
+    text-align: center;
+    font-family: "TT Hoves Pro Trial";
+}
+
+.meself {
+    display: flex;
+    gap: 15%;
+    padding: 20px;
+    line-height: 1.8;
+
+}
+
+.about {
+    width: 50%;
+    height: 70%;
+
+}
+
+.about p {
+    font-family: "Montserrat";
+    text-align: justify;
+    font-size: 22px;
+}
+
+/*------------------ Cracha -----------------------------*/
+.cracha {
+    display: center;
+    background-color: #131A2A;
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    justify-items: center;
+
+}
+
+.o {
+    display: block;
+    background-color: #131A2A;
+    height: 10px;
+    width: 70px;
+    border-radius: 10px;
+    margin-top: -50px;
+}
+
+.cracha .cbc-cracha {
+    display: flex;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.911) 0%, rgba(0, 0, 255, 0.233) 100%);
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(100% 0, 100% 40%, 50% 100%, 0 40%, 0 0)
+}
+
+.cracha img {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.cracha img:hover {
+    transform: scale(1.1);
+    transition: 10ms;
+}
+
+.cracha .img-claiton {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -10%;
+    border-radius: 100%;
+
+}
+
+.cracha .img-claiton:hover {
+    transform: scale(1.1);
+    transition: 10ms;
+}
+
+.conteudo-cracha a img {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.cracha a {
+    text-decoration: none;
+}
+
+/* --------------- O que posso fazer para ajudar -------------- */
+.cpt-ajuda {
+    justify-items: center;
+
+
+}
+
+.cpt-ajuda h1 {
+    max-width: 50%;
+    font-size: 3rem;
+    margin-left: 10px;
+}
+
+/*max-width:40%;*/
+.abilidade {
+    display: flex;
+    gap: 10px
+}
+
+.tsc-help {
+    display: inline-block;
+    background-color: #131A2A;
+    width: 370px;
+    height: 330px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tsc-help:hover {
+    border: 3px solid blue;
+}
+
+.ico-help {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px;
+}
+
+h3 {
+    color: white;
+    margin-left: 15px;
+    padding-left: 20px;
+    font-family: "inter";
+
+}
+
+.p-help {
+    margin: 20px;
+    padding: 10px;
+    max-width: 90%;
+    height: 50%;
+    font-family: "Epilogue";
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/*--- chamada da ação ------*/
+.contato {
+    background-color: #131A2A;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    transition: .9s;
+}
+
+.contato:hover {
+    background-color: #202d4d;
+
+}
+
+.contato h3 {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.contato p {
+    padding: 20px;
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.contato .btn-contato {
+    margin: 50px;
+}
+
+/*----------------O comeco do projetos --------------*/
+.img-port p {
+    text-align: center;
+    margin-top: 200px;
+    background-color: slategray;
+    font-size: 1.5rem;
+    box-shadow: 0px -2px 3px 5px rgba(112, 128, 144, 0.438);
+  }
+
+.projetos h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.projetos .flex {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #131A2A;
+
+}
+
+/*-------------------formulario-------------------------------------*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+.interface {
+    padding-top: 5%;
+}
+
+section h1 {
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .div-btn-send {
+    margin-top: 20px;
+}
+
+form .div-btn-send input:hover {
+    background-color: blue;
+    transition: 0.3s;
+}
+
+/*-------footer----------*/
+footer {
+    background: rgba(7, 21, 219, 0.295);
+}
+
+.endereco {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.endereco h4 {
+    color: #fff;
+    margin-top: 20%;
+
+}
+
+.endereco p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.contato-footer {
+    display: inline;
+    margin: 0px 200px 0px 200px;
+    padding-top: 50px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.cnt {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.cnt p {
+    margin-top: 10px;
+}
+
+.ico-img {
+    width: 100px;
+    height: 100px;
+}
+
+.ico-contato {
+    width: 45px;
+    height: 40px;
+    padding: 0;
+    ;
+}
+
+.cnt p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .img {
+    padding-top: 30px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.line-footer {
+    display: flex;
+}
+
+footer .maps {
+    display: none;
+}
+
+@media screen and (max-width:1181px) {
+
+    .texto h1 {
+        font-size: 40px;
+    }
+
+    .texto p {
+        display: none;
+    }
+
+    main .portfolio {
+        width: 100%;
+        height: 1700px;
+        padding: 40px 8%;
+
+    }
+
+    main .p-portfolio {
+        width: 100%;
+        height: 900px;
+    }
+
+    /* sobre mim */
+
+    .cracha {
+        display: none;
+    }
+    .meself {
+        flex-direction: column-reverse;
+
+    }
+    .about {
+        width: 100%;
+        height: 300px;
+    }
+    .about p {
+        font-size: 7px;
+    }
+    .e-portfolio .img-cle {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .e-portfolio .contato-bout {
+        display: block;
+
+    }
+    .contato-bout {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin-top: 5px;
+
+    }
+    .iq {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-cle {
+        display: flex;
+    }
+
+    .img-cle img {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        animation: efeito 2s ease-in-out infinite alternate;
+
+    }
+
+    @keyframes efeito {
+        0% {
+            top: 0;
+        }
+
+        100% {
+            top: 30px;
+        }
+
+    }
+    /*oque posso fazer por vc */
+
+    #apenas {
+        display: block;
+    }
+
+    .cpt-ajuda h1 {
+        max-width: 100%;
+        font-size: 2rem;
+        margin-left: none;
+    }
+
+    .abilidade {
+        flex-direction: column;
+
+    }
+
+    .cpt-ajuda .contato {
+        width: 100%px;
+        width: 300px;
+        text-align: center;
+        transition: 0.9s;
+    }
+
+    .cpt-ajuda .contato:hover {
+        background-color: blue;
+    }
+
+    .cpt-ajuda .btn-contato {
+        display: center;
+    }
+
+    .tsc-help {
+        width: 325px;
+        height: 355px;
+    }
+
+    .tsc-help:hover {
+        border: none;
+        transform: scale(1.05);
+        transition: .2s;
+        box-shadow: #ffffff41 2px 2px 6px;
+    }
+
+    /*projetos */
+    .projetos {
+        flex-direction: column;
+    }
+
+    .projetos .img-port {
+        display: none;
+    }
+
+    /*footer*/
+
+    .line-footer {
+        flex-direction: column-reverse;
+
+    }
+
+    .contato-footer {
+        display: inline;
+        margin: 0px;
+        padding-top: 0px;
+        width: 300px;
+        height: 100px;
+
+    }
+
+    .endereco {
+        display: none;
+
+    }
+
+    footer .maps {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 1343px) {
+
+    .front-interface nav,
+    .but-menu {
+        display: none;
+    }
+
+    /*MENU DESQUETO-TOP*/
+
+    .btn-abrir-menu i {
+        position: absolute;
+        color: blue;
+        font-size: 40px;
+        top: 0;
+        right: 0;
+        margin: 25px;
+
+    }
+}
+
+.Menu-mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.Menu-mobile.abrirmenu {
+    width: 70%;
+}
+
+.Menu-mobile.abrirmenu~.overlay-menu {
+    display: block;
+
+}
+
+.Menu-mobile .btn-fechar {
+    padding: 20px;
+}
+
+.Menu-mobile .btn-fechar i {
+
+    color: rgba(0, 0, 255, 0.808);
+    font-size: 30px;
+
+
+}
+
+.Menu-mobile nav ul {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+
+.Menu-mobile nav ul li a {
+    display: block;
+    font-size: 20px;
+    padding: 25px 8%;
+    font-weight: 300;
+}
+
+.Menu-mobile nav ul li a:hover {
+    background-color: blue;
+    transform: none;
+
+}
+
+.overlay-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 88888;
+}
